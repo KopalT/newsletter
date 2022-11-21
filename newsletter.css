@@ -1,0 +1,128 @@
+@import url('font/AvenirLTStd-Black.otf');
+@import url('font/AvenirLTStd-Book.otf');
+@import url('font/AvenirLTStd-Roman.otf');
+
+.banner {
+    background: url('ABC_0_0.png') no-repeat top center;
+    background-size: cover;
+    min-height:100vh;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.banner::after {
+    content: '';
+    background: #000000;
+    opacity: 0.2;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.banner-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+    
+}
+
+.banner-content h1 {
+    font-size: 54px;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 2em 0em;
+    font-family: 'AvenirLtStd-Black';
+}
+
+.section-blue{
+    background: #0a3266;
+    padding: 30px 0px;
+}
+.section-blue > h2 {
+    width: 270px;
+    background-color: #ffffff;
+    padding: 12px 15px;
+    font-size: 58px;
+    font-family: 'AvenirLtStd-Black';
+    color: #0a3266;
+    text-align: right;
+}
+
+.nav-newsletter {
+    list-style-type: none;
+    margin-top: 30px;
+}
+
+.nav-newsletter li {
+    color: #ffffff;
+    font-family: 'AvenirLtStd-Book';
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.nav-newsletter li::before {
+    content: '';
+    width: 18px;
+    height: 18px;
+    background-color: #f99d2a;
+    position: absolute;
+    left: 20px;
+    margin-top: 8px;
+}
+
+.nav-newsletter li a {
+    color: #ffffff;
+}
+
+.section-white {
+    background-color: #ffffff;
+    padding: 30px 0px;
+}
+
+.section-white h2 {
+    width: 550px;
+    background-color: #0a3266;
+    padding: 12px 15px;
+    font-size: 58px;
+    font-family: 'AvenirLtStd-Black';
+    color: #f99d2a;
+    text-align: right;
+}
+.section-white > div > div> p {
+    color: #0a3266;
+    font-family: 'AvenirLtStd-Book';
+    text-align: justify;
+}
+
+.video-content {
+    margin-top: -12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-content h3 {
+    background-color: #ffffff;
+    color: #0a3266;
+    padding: 10px;
+    font-size: 48px;
+    font-family: 'AvenirLtStd-Book';
+    margin-top: -50px;
+    z-index: 1;
+}
+
+.yellow-text {
+    color: #f99d2a;
+    font-size: 48px;
+    font-family: 'AvenirLtStd-Black';
+    text-align: center;
+}
