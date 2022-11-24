@@ -39,6 +39,33 @@
         } 
     </style>  
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
 </head>
 <body>
     <section class="banner">
@@ -57,21 +84,21 @@
                     <li><a href="#intro">Introduction</a></li>
                     <li><a href="#launch-hmh">Launch of HMH’s New, Ultramodern, Trendy Lifestyle Brand</a></li>
                     <li><a href="#story">The ECOS Story - Exclusive Interview with HMH’s Vice Chairman</a></li>
-                    <li><a href="">CVENT Listing to Aggressively Grow MICE Business</a></li>
-                    <li><a href="">HMH Showcases Strong Portfolio at ATM 2022</a></li>
-                    <li><a href="">Launch of Exciting New Pipeline of Hospitality Projects</a></li>
-                    <li><a href="">Supporting the Community - HMH Blood Donation Drive</a></li>
-                    <li><a href="">HMH Charity Iftar Spreads Joy for Over 150 Orphans</a></li>
-                    <li><a href="">Appointment of HMH COO Powers Growth Plans</a></li>
-                    <li><a href="">HMH WOWs Judges at Middle East Chef Excellence Awards 2022</a></li>
-                    <li><a href="">How HMH is Leading the Way in Health & Wellbeing</a></li>
-                    <li><a href="">New Amsaan Technology Delights Hard of Hearing Guests</a></li>
-                    <li><a href="">HMH Chef in Top 5 at Middle East Chef Excellence Awards</a></li>
-                    <li><a href="">HMH Teams Champion Sustainability Initiatives</a></li>
-                    <li><a href="">Corp Hotels Promote Greener, Healthier Community</a></li>
-                    <li><a href="">ECOS Dubai Hotel at Al Furjan Wins Global Design Award</a></li>
-                    <li><a href="">Strong CSR Supports Saudi Vision 2030 & Green Initiative</a></li>
-                    <li><a href="">HMH Hotels Perfectly Placed to Support Hajj Tourism Boom</a></li>
+                    <li><a href="#mice-business">CVENT Listing to Aggressively Grow MICE Business</a></li>
+                    <li><a href="#portfoio">HMH Showcases Strong Portfolio at ATM 2022</a></li>
+                    <li><a href="#project">Launch of Exciting New Pipeline of Hospitality Projects</a></li>
+                    <li><a href="#donation">Supporting the Community - HMH Blood Donation Drive</a></li>
+                    <li><a href="#charity">HMH Charity Iftar Spreads Joy for Over 150 Orphans</a></li>
+                    <li><a href="#growth-plan">Appointment of HMH COO Powers Growth Plans</a></li>
+                    <li><a href="#awards">HMH WOWs Judges at Middle East Chef Excellence Awards 2022</a></li>
+                    <li><a href="#health">How HMH is Leading the Way in Health & Wellbeing</a></li>
+                    <li><a href="#guest">New Amsaan Technology Delights Hard of Hearing Guests</a></li>
+                    <li><a href="#awards-2">HMH Chef in Top 5 at Middle East Chef Excellence Awards</a></li>
+                    <li><a href="#team-champion">HMH Teams Champion Sustainability Initiatives</a></li>
+                    <li><a href="#green">Corp Hotels Promote Greener, Healthier Community</a></li>
+                    <li><a href="#awards-3">ECOS Dubai Hotel at Al Furjan Wins Global Design Award</a></li>
+                    <li><a href="#support">Strong CSR Supports Saudi Vision 2030 & Green Initiative</a></li>
+                    <li><a href="#hajj">HMH Hotels Perfectly Placed to Support Hajj Tourism Boom</a></li>
                 </ul>
             </div>
         </div>
